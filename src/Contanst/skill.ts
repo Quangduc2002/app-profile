@@ -4,7 +4,7 @@ export const skills = [
     text: 'Git',
   },
   {
-    image: '/Images/bootstrap.svg',
+    image: '/Images/bootstrap.png',
     text: 'Bootstrap',
   },
   {
