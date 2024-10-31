@@ -65,10 +65,10 @@ function Project() {
           <Link
             to={project?.clone_url}
             target='_blank'
-            className='border-[2px] experiences experiences-bg bg-[--glow-card-background] cursor-pointer'
+            className='border-[2px] experiences cursor-pointer'
             key={project?.id}
           >
-            <div className='flex flex-col justify-between p-6 h-[150px] border-[2px] border-solid border-[--border-hero-right] rounded-2xl hover:rounded-none'>
+            <div className='flex flex-col justify-between p-6 h-[150px] experiences-bg bg-[--glow-card-background] border-[2px] border-solid border-[--border-hero-right] rounded-2xl hover:rounded-none'>
               <div className='flex flex-col gap-2'>
                 <div className='flex items-center gap-4'>
                   <Icon icon='icon-icon-project' className='text-[20px] text-[--bs-navbar-color]' />

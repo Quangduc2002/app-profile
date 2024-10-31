@@ -32,11 +32,8 @@ function Experiences() {
         <div className='flex flex-col gap-12'>
           {dataExperiences?.map((item, index) => {
             return (
-              <div
-                key={index}
-                className='border-[2px] experiences experiences-bg bg-[--glow-card-background]'
-              >
-                <div className='p-4 h-max border-[2px] border-solid border-[--border-hero-right] rounded-2xl hover:rounded-none'>
+              <div key={index} className='border-[2px] experiences'>
+                <div className='p-4 h-max border-[2px] experiences-bg bg-[--glow-card-background] border-solid border-[--border-hero-right] rounded-2xl hover:rounded-none'>
                   <Text type='body1' className='text-[--text-pink-100] text-center'>
                     {item?.date}
                   </Text>
