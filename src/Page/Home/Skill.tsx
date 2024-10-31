@@ -28,8 +28,8 @@ function Skill() {
     type: 'loop',
     perPage: 6,
     pagination: false,
-    drag: 'free',
     arrows: false,
+    focus: 'center',
     autoScroll: {
       speed: 0.3,
       pauseOnHover: true,
@@ -48,10 +48,11 @@ function Skill() {
         perPage: 2.5,
       },
       425: {
-        perPage: 1.75,
+        perPage: 1.5,
       },
     },
   };
+
   return (
     <div className='border-t border-solid border-[--border-hero-right] pb-[100px]'>
       <Text type='heading3-semi-bold' className='text-[--text-white] text-center my-[48px]'>
@@ -65,7 +66,7 @@ function Skill() {
         extensions={{ AutoScroll }}
       >
         <SplideTrack>
-          {skills?.map((item: any, index: number) => (
+          {skills.map((item: any, index: number) => (
             <SplideSlide key={index}>
               <SkillItem {...item} />
             </SplideSlide>
