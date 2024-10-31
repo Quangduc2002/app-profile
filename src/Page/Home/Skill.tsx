@@ -31,7 +31,7 @@ function Skill() {
     arrows: false,
     focus: 'center',
     autoScroll: {
-      speed: 0.3,
+      speed: 1,
       pauseOnHover: true,
     },
     breakpoints: {
