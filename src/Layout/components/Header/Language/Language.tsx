@@ -18,14 +18,15 @@ const img_path = {
   en: '/Images/flag-uk.png',
 } as any;
 
-const Language = () => {
+const Language = ({ onClose }: any) => {
   const { t } = useTranslation('home');
   const language = i18n.language;
   const navigate = useNavigate();
   const onChangeLanguage = (locale: string) => {
     i18n.changeLanguage(locale);
-    const currentPath = window.location.pathname; // Get current path
+    const currentPath = window.location.pathname;
     navigate(currentPath, { state: { locale } });
+    onClose();
   };
 
   const items: MenuProps['items'] = [

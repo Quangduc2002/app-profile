@@ -27,6 +27,7 @@ function Header() {
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    setOpen(false);
   };
 
   return (
@@ -84,6 +85,7 @@ function Header() {
           <Drawer onClose={onClose} open={open} className='!bg-[--background-body]'>
             <div className='flex flex-col gap-4'>
               <NavLink
+                onClick={onClose}
                 to={'/'}
                 className={({ isActive }) =>
                   `${
@@ -94,6 +96,7 @@ function Header() {
                 <Text className='text-lg'>{t('txt_home')}</Text>
               </NavLink>
               <NavLink
+                onClick={onClose}
                 to={'/project'}
                 className={({ isActive }) =>
                   `${
@@ -104,6 +107,7 @@ function Header() {
                 <Text className='text-lg'>{t('txt_project')}</Text>
               </NavLink>
               <NavLink
+                onClick={onClose}
                 to={'/about'}
                 className={({ isActive }) =>
                   `${
@@ -118,7 +122,7 @@ function Header() {
                 icon={`${theme === 'light' ? 'icon-icon-light' : 'icon-icon-dark'}`}
                 className='text-2xl text-[--bs-navbar-color] cursor-pointer'
               />
-              <Language />
+              <Language onClose={onClose} />
             </div>
           </Drawer>
         </div>

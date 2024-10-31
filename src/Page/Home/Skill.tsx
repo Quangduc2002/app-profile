@@ -10,7 +10,7 @@ interface ISkillItem {
   text: string;
 }
 
-const SkillItem = ({ image, text }: ISkillItem) => {
+const SkillItem: React.FC<ISkillItem> = ({ image, text }) => {
   return (
     <div className='skill-item h-[130px] w-[150px] cursor-pointer m-[20px]'>
       <div className='skill-hover flex flex-col justify-center items-center h-full gap-4 bg-[--skill-card-background] border border-[--border-hero-right] hover:border-[#ee82ee] duration-500 hover:scale-125 rounded-md '>
