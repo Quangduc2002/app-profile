@@ -94,13 +94,13 @@ function Banner({ experienceRef }: any) {
             <div className='ml-5'>
               <div className='flex gap-3'>
                 <Text className='text-[--text-white]'>name:</Text>
-                <Text className='text-[--text-white]'>Quang Đức,</Text>
+                <Text className='text-[--text-white]'>Phạm Quang Đức,</Text>
               </div>
 
               <div className='flex gap-3'>
                 <Text className='text-[--text-white]'>skills:</Text>
                 <Text className='text-[--text-pink-200]'>
-                  [ 'ReactJS', 'Redux', 'NextJS', 'NestJS', 'NoSQL', 'SQL', 'Docker', 'NodeJS' ],
+                  ['ReactJS', 'NodeJS', 'Redux', 'NextJS', 'Javascript', 'NoSQL', 'SQL', 'Docker'],
                 </Text>
               </div>
             </div>

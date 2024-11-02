@@ -273,13 +273,13 @@ body {
   }
 }
 
-@media screen and (min-width: 486px) {
+@media screen and (min-width: 550px) {
   .hidden-menu {
     display: none;
   }
 }
 
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 550px) {
   .hidden-header {
     display: none !important;
   }

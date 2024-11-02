@@ -34,7 +34,7 @@ function Header() {
     <div className='relative z-10 h-[60px]'>
       <Container className='flex justify-between h-full items-center'>
         <ul className='flex gap-4 items-center'>
-          <Text className='text-2xl text-[--brand-name-100]'>{t('txt_name')}</Text>
+          <Text className='text-2xl text-[--brand-name-100]'>{t('txt_name_title')}</Text>
           <div className='flex gap-4 items-center hidden-header'>
             <NavLink
               to={'/'}
