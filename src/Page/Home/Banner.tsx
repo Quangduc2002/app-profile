@@ -6,8 +6,15 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Icon } from '@/Component/UI/IconFont/Icon';
 import { Link } from 'react-router-dom';
 
-function Banner() {
+function Banner({ experienceRef }: any) {
   const { t } = useTranslation('home');
+
+  const handleScrollClick = () => {
+    if (experienceRef.current) {
+      experienceRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className='md:h-[500px] mb-[48px]'>
       <div className='home'></div>
@@ -50,12 +57,14 @@ function Banner() {
             <button
               className='resize-button max-sm:p-[12px] border border-solid border-[--border-hero-right]'
               style={{ background: 'unset' }}
+              onClick={handleScrollClick}
             >
               <Text className='uppercase text-lg max-sm:text-sm font-semibold text-[--text-white]'>
                 {t('txt_skill')}
               </Text>
               <Icon icon='icon-fire' className='text-[#ffa500] text-xl' />
             </button>
+
             <button className='resize-button max-sm:p-[12px]'>
               <Text className='uppercase text-lg max-sm:text-sm font-semibold'>
                 {t('txt_resume')}

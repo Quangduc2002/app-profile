@@ -3,7 +3,7 @@ import Text from '@/Component/UI/Text';
 import { useTranslation } from 'react-i18next';
 import ImageLaptop from '@/Component/UI/ImageLaptop';
 import { Icon } from '@/Component/UI/IconFont/Icon';
-function Experiences() {
+function Experiences({ experienceRef }: any) {
   const { t } = useTranslation();
   const dataExperiences = [
     {
@@ -19,8 +19,8 @@ function Experiences() {
   ];
 
   return (
-    <>
-      <Text type='heading3-semi-bold' className='text-[--text-white] text-center my-[48px]'>
+    <div ref={experienceRef} className='pt-[48px]'>
+      <Text type='heading3-semi-bold' className='text-[--text-white] text-center mb-[48px]'>
         {t('txt_experiences')}
       </Text>
 
@@ -56,7 +56,7 @@ function Experiences() {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
